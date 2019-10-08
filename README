@@ -1,0 +1,4 @@
+Copiar los archivos de la carpeta SNORT en /etc/snort
+  - sudo cp -R * /etc/snort/
+Copiar los archivos de la carpeta usr-lib en /usr/lib
+  - sudo cp -R * /usr/lib/
