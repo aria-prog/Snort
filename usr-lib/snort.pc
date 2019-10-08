@@ -1,0 +1,17 @@
+prefix=/usr
+exec_prefix=${prefix}
+bindir=${exec_prefix}/sbin
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+mandir=${datarootdir}/info
+infodir=${datarootdir}/info
+
+Name: Snort
+Description: Snort dynamic plugins/detection/rules
+URL: www.snort.org
+Version: 2.9.7.0
+Libs: -L${libdir} -lcurl -Wl,-Bsymbolic-functions -Wl,-z,relro -lpcre -ldumbnet -lz -ldaq_static -ldumbnet -lpcre -lpcap -lnsl -lm -lm  -ldl -L/usr/lib -ldaq_static_modules  -lsfbpf -lpcap -lsfbpf -lpcap -lz -llzma -lpthread -lpthread -lpthread
+Cflags: -g -O2 -fdebug-prefix-map=/build/snort-ECAgvl/snort-2.9.7.0=. -fstack-protector-strong -Wformat -D_GNU_SOURCE -DSF_VISIBILITY -fvisibility=hidden -Wall -Wdate-time -D_FORTIFY_SOURCE=2 -DLZMA -DGRE -DMPLS -DPPM_MGR -DNDEBUG -DENABLE_REACT -DENABLE_RESPOND -DENABLE_RESPONSE3 -DSF_WCHAR -DTARGET_BASED -DPERF_PROFILING -DSNORT_RELOAD -DNO_NON_ETHER_DECODER -DNORMALIZER -DACTIVE_RESPONSE
+
